@@ -1,0 +1,10 @@
+name: Semgrep
+on:
+  pull_request:
+    branches:    
+      - main
+      - master
+
+jobs:
+  check:
+    uses: xstog625/semgrep/.github/workflows/semgrep.yml@main
